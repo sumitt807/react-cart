@@ -14,7 +14,7 @@ function App() {
                     <Route path="/about" component={About} exact></Route>
                     <Route path="/movie" component={Movie} exact></Route>
                     <Route path="/blogs" component={BlogArchive} exact></Route>
-                    <Route path="/blog/:id" component={BlogSinglePage} exact></Route>
+                    <Route path="/:slug" component={BlogSinglePage} exact></Route>
                 </Switch>
             </Router>
         </>

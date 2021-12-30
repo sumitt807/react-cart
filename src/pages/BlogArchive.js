@@ -14,7 +14,9 @@ const BlogArchive = () => {
             .then((result) => {
                 result.json().then((resp) => {
                     resp.forEach(async (p, index) => {
-                        p.img = await getFeatureImage(179)
+                        p.img = 'https://picsum.photos/200/300';
+                        if (p.featured_media !== 0)
+                            p.img = await getFeatureImage(p.featured_media)
                         if (index === resp.length - 1) {
                             setPosts(resp);
                         }
@@ -42,9 +44,11 @@ const BlogArchive = () => {
             {
                 posts.map((post) =>
                     <div className='blogCard' key={`post-${post.id}`}>
+                        <a href={post.slug}>{post.title.rendered}</a>
                         <div className='title'>{post.title.rendered}</div>
                         <div className='image'> <img src={post.img} /></div>
                         <div className='content' dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+
                     </div>
                 )
             }
