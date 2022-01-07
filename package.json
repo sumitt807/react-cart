@@ -2,6 +2,7 @@
   "name": "react-cart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sumitt807.github.io/react-cart/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -11,6 +12,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "gh-pages": "^3.2.3",
+    "gh-pages-deploy": "^0.5.1",
     "html-react-parser": "^1.4.4",
     "mysql": "^2.18.1",
     "react": "^17.0.2",
