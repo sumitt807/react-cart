@@ -10,11 +10,11 @@ function App() {
         <>
             <Router>
                 <Switch>
-                    <Route path="/" component={Home} exact></Route>
-                    <Route path="/about" component={About} exact></Route>
-                    <Route path="/movie" component={Movie} exact></Route>
-                    <Route path="/blogs" component={BlogArchive} exact></Route>
-                    <Route path="/:slug" component={BlogSinglePage} exact></Route>
+                    <Route path="/react-cart/" component={Home} exact></Route>
+                    <Route path="/react-cart/about" component={About} exact></Route>
+                    <Route path="/react-cart/movie" component={Movie} exact></Route>
+                    <Route path="/react-cart/blogs" component={BlogArchive} exact></Route>
+                    <Route path="/react-cart/:slug" component={BlogSinglePage} exact></Route>
                 </Switch>
             </Router>
         </>
