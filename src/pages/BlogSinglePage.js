@@ -45,7 +45,6 @@ const BlogSinglePage = () => {
         })
     }
 
-    console.log(post);
 
     return (
         <>
